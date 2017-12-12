@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1 {font-family: "Times", sans-serif}
+img {margin-bottom: -7px}
+.w3-row-padding img {margin-bottom: 12px
+}
+</style>
+
+<body>
+
+
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<div class="w3-clear"></div>
+<header class="w3-container w3-center w3-padding-32">
+  <h1><b>for your viewing pleasure</b></h1>
+  <h6><b> <i class="fa fa-heart-o" aria-hidden="true"></i> all shots taken by yours truly :-) <i class="fa fa-heart-o" aria-hidden="true"></i></b></h6>
+<div class="w3-bar w3black"> <a class="w3-bar-item" href=index.html> home </a> <a class="w3-bar-item" href=photography.html> photography </a> <a class="w3-bar-item" href=journal.html> journal </a> <a class="w3-bar-item" href=links.html> links </a> <a class="w3-bar-item" href=band.html> band </a> </div>
+</header>
+</div>
+
+<!-- Photo Grid -->
+<div class="w3-row" id="myGrid" style="margin-bottom:128px">
+  <div class="w3-third">
+    <img src="imgs/rain.jpg" alt="rain" style="width:100%">
+    <img src="imgs/broken.jpg" alt="broken" style="width:100%">
+    <img src="imgs/hallway.jpg" alt="hallway" style="width:100%">
+    <img src="imgs/frank.jpg" alt="frank" style="width:100%">
+    <img src="imgs/express.jpg" alt="express" style="width:100%">
+    <img src="imgs/runningscribble.jpg" alt="scribble" style="width:100%">
+  </div>
+
+  <div class="w3-third">
+    <img src="imgs/purple.jpg" alt="purple" style="width:100%">
+    <img src="imgs/woods.jpg" alt="woods" style="width:100%">
+    <img src="imgs/woods2.jpg" alt="woods2" style="width:100%">
+    <img src="imgs/abstract.jpg" alt="abstract" style="width:100%">
+    <img src="imgs/abstract2.jpg" alt="abstract2" style="width:100%">
+    <img src="imgs/abstract3.jpg" alt="abstract 3" style="width:100%">
+  </div>
+
+  <div class="w3-third">
+    <img src="imgs/alcohol.jpg" alt="alcoholic" style="width:100%">
+    <img src="imgs/barber.jpg" alt="barber" style="width:100%">
+    <img src="imgs/theman.jpg" alt="theman" style="width:100%">
+    <img src="imgs/snow.jpg" alt="snow" style="width:100%">
+    <img src="imgs/snow2.jpg" alt="snow2" style="width:100%">
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px"> 
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+ 
+<script>
+// Toggle grid padding
+function myFunction() {
+    var x = document.getElementById("myGrid");
+    if (x.className === "w3-row") {
+        x.className = "w3-row-padding";
+    } else { 
+        x.className = x.className.replace("w3-row-padding", "w3-row");
+    }
+}
+
+// Open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.width = "100%";
+    document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
